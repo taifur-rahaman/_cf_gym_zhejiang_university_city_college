@@ -1,26 +1,29 @@
 # number of cases
-t = int(input())
+case = int(input("Enter number of Cases: "))
 
 # case validation
-if t < 1 or t > 100:
+if case < 1 or case > 100:
     quit()
 
 
-def equation(n, m, k):
-    floor_hight = k / m
-    bobogo_hight = floor_hight * (n - 1)
+def equation(current_floor, total_floor, total_height):
+    floor_height = total_height / total_floor
+    current_height = floor_height * \
+        (current_floor - 1)  # ground floor height = 0
 
-    return bobogo_hight
+    return current_height
 
 
 place_holder_list = []
 
-for i in range(t):
-    n, m, k = map(int, input().split())
+for i in range(case):
+    current_floor, total_floor, total_height = map(int, input(
+        "Enter Current Floor, Total Floor, and Total Height: ").split())
     # input validation
-    if n < 1 and k > 100 and n > m:
+    if current_floor < 1 and total_height > 100 and current_floor > total_floor:
         quit()
-    place_holder_list.append(equation(n, m, k))
+    place_holder_list.append(
+        equation(current_floor, total_floor, total_height))
 
 for i in place_holder_list:
-    print(i)
+    print(f"Current floor is {i:0.2f} unit High")
