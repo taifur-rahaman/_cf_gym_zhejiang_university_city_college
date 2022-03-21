@@ -8,8 +8,8 @@
 
 **Problems**
 
-1. [All in!]()
-2. [Boboge and Tall Building]()
+1. [All in!](https://github.com/taifur-rahaman/_cf_gym_zhejiang_university_city_college/tree/main/_all_in)
+2. [Boboge and Tall Building](https://github.com/taifur-rahaman/_cf_gym_zhejiang_university_city_college/tree/main/_boboge_and_tall_building)
 3. [Constructive Problem]()
 4. [Diseased String]()
 5. [Equality]()
